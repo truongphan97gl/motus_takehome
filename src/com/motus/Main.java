@@ -14,11 +14,8 @@ public class Main {
         for (int i = 0; i < n; i++) {
             Arrays.fill(board[i], "#");
         }
-        double turn = Math.floor(Math.random()*(100+1));
-        boolean isO = true;
-        if (turn % 2 == 0) {
-            isO = false;
-        }
+        boolean isO = Math.floor(Math.random() * (100 + 1)) % 2 == 0;
+
         while(true) {
             if (isO) {
                 System.out.println("O turn");
@@ -49,7 +46,6 @@ public class Main {
                 break;
             };
             isO = !isO;
-            turn++;
         }
 
     }
