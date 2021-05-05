@@ -26,7 +26,7 @@ public class Main {
                 System.out.println("X turn");
             }
 
-            System.out.println("Enter move a b: ");
+            System.out.println("Enter move row col (row col): ");
             String[] move = scanner.nextLine().split(" ");
             int row = Integer.parseInt(move[0]);
             int col = Integer.parseInt(move[1]);
